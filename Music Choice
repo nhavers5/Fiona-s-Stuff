@@ -1,0 +1,22 @@
+var chill = prompt("Are you in the mood to chill?").toLowerCase()
+if (chill === "yes" || chill === "yeah") {
+    var remix = prompt("Do you want to listen to remixes?").toLowerCase()
+    if (remix === "yes" || remix === "yeah") {
+        console.log("Then listen to Noah's music!!")
+    }
+    else if (remix === "no" || remix === "nah"){
+        console.log("Then listen to Fiona's music!!")
+    }
+    else {
+        console.log("Restart the programme and make up your mind!")
+    }
+}
+else{
+    var party = prompt("Is it a party?").toLowerCase()
+    if (party === "yes" || party === "yeah") {
+        console.log("Then listen to Noah's music (even though it's rubbish)")
+    }
+    else {
+        console.log("Then listen to the best music! (Fiona's music)")
+    }
+}
