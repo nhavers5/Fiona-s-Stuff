@@ -1,0 +1,13 @@
+var numberOfHeads = 0
+var numberOfGames = prompt ("How many times would you like to flip the coin?")
+for (var i = 0; i < numberOfGames; i ++) {
+    var result = Math.floor((Math.random() * 2) + 1) ; 
+    if (result === 1) {
+        console.log("heads")
+        numberOfHeads = numberOfHeads+1
+    }
+    else {
+        console.log("tails")
+    }
+}
+console.log("There were " +numberOfHeads +" heads and " +(numberOfGames-numberOfHeads) +" tails")
