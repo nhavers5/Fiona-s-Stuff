@@ -1,7 +1,7 @@
 var amountOfLove = prompt("How much do you love me on a scale of 1 to 1,000,000").toLowerCase()
-if (amountOfLove === "1,000,000" || amountOfLove === "9,999,999") {
+if (amountOfLove === "1,000,000" || amountOfLove === "999,999") {
     var who = prompt("Do i love you more though?").toLowerCase()
-    if (who === "yes" || who === "yeah") {
+    if (who === "yes" || who === "yeah" || who === "yep") {
         console.log("Of course I do!! love you billions and billions and billions! don't know what i would do without you my lovely, amazing, perfect boyfriend!! happy valentines day!")
     }
     else if (who === "no" || who === "nah"){
@@ -11,9 +11,9 @@ if (amountOfLove === "1,000,000" || amountOfLove === "9,999,999") {
         console.log("restart because of all the love that's in the air")
     }
 }
-else{
+else {
     var code = prompt("well I love you 1,000,000 so i clearly love you more! Do you like having a girlfriend whose attempting to learn to code?").toLowerCase()
-    if (code === "yes" || code === "yeah") {
+    if (code === "yes" || code === "yeah" || code === "yep") {
         console.log("Hehe that's because i'm brill :P but you're even better! you're perfect :) Happy valentines my lovely! ")
     }
     else {
