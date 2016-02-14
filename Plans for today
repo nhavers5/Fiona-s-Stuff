@@ -1,0 +1,46 @@
+var plans = prompt("What would you like to do today?");
+var route1;
+switch (plans) {
+    case "sex": 
+        console.log ("sounds great to me");
+        route1 = true;
+        break;
+    case "beach":
+        console.log ("but it's freeeeeeezing");
+        route1 = true;
+        break;
+    case "lunch":
+        console.log ("yes, i am hungry");
+        var food = prompt("What food would you like?");
+        switch (food) {
+            case "curly fries":
+                console.log ("mmmmmmm curly fries");
+                break;
+            case "picnic":
+                console.log("Ill bring the rug");
+                break;
+            default:
+                console.log(food+" sounds amazing");
+        }
+        break;
+    default:
+        console.log("Please try again");
+        route1 = false;
+}
+switch (route1) {
+    case true: 
+        var time = prompt("What time?");
+        switch (time) {
+            case "10:00":
+                console.log("No ill still be in bed");
+                break;
+            case "13:00":
+                console.log("Not right after lunch");
+                break;
+            default:
+                console.log("Sounds perfect");
+        }
+        break;
+    case false:
+        console.log("We could have sex, a picnic or lunch");
+}
